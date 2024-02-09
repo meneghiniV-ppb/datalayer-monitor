@@ -1,0 +1,17 @@
+{
+  "name": "Datalayer monitor",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*.qa.com.paddypower/*", "*://*.paddypower.com/*"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["script.js"],
+      "matches": ["*://*.qa.com.paddypower/*", "*://*.paddypower.com/*"]
+    }
+  ]
+}
