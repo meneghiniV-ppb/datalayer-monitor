@@ -63,6 +63,7 @@ function start() {
     events.push(args[0]);
 
     logEvents();
+    events = [];
 
     debounceTimer = setTimeout(() => {
       console.log(
